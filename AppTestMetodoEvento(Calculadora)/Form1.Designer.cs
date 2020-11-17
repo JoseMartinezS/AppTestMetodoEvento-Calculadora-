@@ -46,6 +46,7 @@
             this.btnDividir = new System.Windows.Forms.Button();
             this.btnMultiplicar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnRaizCuadrada = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNumeros
@@ -247,11 +248,23 @@
             this.btnBorrar.UseVisualStyleBackColor = true;
             this.btnBorrar.Click += new System.EventHandler(this.MiMetodo_Click);
             // 
+            // btnRaizCuadrada
+            // 
+            this.btnRaizCuadrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRaizCuadrada.Location = new System.Drawing.Point(431, 68);
+            this.btnRaizCuadrada.Name = "btnRaizCuadrada";
+            this.btnRaizCuadrada.Size = new System.Drawing.Size(75, 41);
+            this.btnRaizCuadrada.TabIndex = 18;
+            this.btnRaizCuadrada.Text = "R";
+            this.btnRaizCuadrada.UseVisualStyleBackColor = true;
+            this.btnRaizCuadrada.Click += new System.EventHandler(this.MiMetodo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 328);
+            this.Controls.Add(this.btnRaizCuadrada);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnMultiplicar);
             this.Controls.Add(this.btnDividir);
@@ -296,6 +309,7 @@
         private System.Windows.Forms.Button btnDividir;
         private System.Windows.Forms.Button btnMultiplicar;
         private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Button btnRaizCuadrada;
     }
 }
 

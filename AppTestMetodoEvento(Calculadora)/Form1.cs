@@ -26,7 +26,17 @@ namespace AppTestMetodoEvento_Calculadora_
            string textoBoton= ((Button)sender).Text;
             switch (textoBoton)
             {
-               case "+":
+                case "R":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    //Operacion = TextoBoton;
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultado = Math.Sqrt(valor1);
+                    lblNumeros.Text = resultado+"";
+                    break;
+                case "+":
                     if (lblNumeros.Text == "")
                     {
                         break;
