@@ -36,6 +36,42 @@ namespace AppTestMetodoEvento_Calculadora_
                     double resultado = Math.Sqrt(valor1);
                     lblNumeros.Text = resultado+"";
                     break;
+                case "COS":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultado1 = Math.Cos(valor1);
+                    lblNumeros.Text = resultado1 + "";
+                    break;
+                case "LOG":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultado2 = Math.Log(valor1);
+                    lblNumeros.Text = resultado2 + "";
+                    break;
+                case "SEN":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultado3 = Math.Sin(valor1);
+                    lblNumeros.Text = resultado3 + "";
+                    break;
+                case "TAN":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultado4 = Math.Tan(valor1);
+                    lblNumeros.Text = resultado4 + "";
+                    break;
                 case "+":
                     if (lblNumeros.Text == "")
                     {
